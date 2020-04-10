@@ -40,3 +40,50 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+//this is the navigation bar
+  const navLinks = document.querySelectorAll('a');
+  navLinks[0].textContent = siteContent['nav']['nav-item-1'];
+  navLinks[1].textContent = siteContent['nav']['nav-item-2'];
+  navLinks[2].textContent = siteContent['nav']['nav-item-3'];
+  navLinks[3].textContent = siteContent['nav']['nav-item-4'];
+  navLinks[4].textContent = siteContent['nav']['nav-item-5'];
+  navLinks[5].textContent = siteContent['nav']['nav-item-6'];
+  
+  navLinks.forEach( (element) => {
+    element.style.color = "green"
+  })
+
+
+
+//this is the cta 
+
+//DomIsAwesome
+document.getElementsByClassName('cta-text')[0].textContent = siteContent['cta']['h1']
+
+//logo2 
+//let logo2 = document.getElementById("cta");
+//logo2.setAttribute('src', siteContent ["cta"]["img-src"])
+
+
+//this is going to be the middle content 
+
+//features
+document.querySelectorAll('.text-content h4')[0].textContent = siteContent['main-content']['features-h4']
+document.querySelectorAll('.text-content p')[1].textContent = siteContent['main-content']['features-content']
+
+//image
+//let logo3 = document.getElementById("middle-img");
+//logo3.setAttribute('src', siteContent["main-content"]["img-src"])
+
+//about
+document.querySelectorAll('.text-content h4')[2].textContent = siteContent['main-content']['about-h4']
+document.querySelectorAll('.text-content p')[3].textContent = siteContent['main-content']['about-content']
+
+
+
+
+//this is the bottom content 
+
+//this is the footer content 
